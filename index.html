@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IQ-Тест: g-factor</title>
+    <title>IQ & G-Factor Test</title>
     <style>
         /* Общие стили */
         body {
@@ -25,6 +25,7 @@
             page-break-after: always;
             position: relative;
             background: #fff;
+            counter-reset: question-number; /* <-- Добавьте эту строку */
         }
 
         .page:last-child {
@@ -179,7 +180,7 @@
     <!-- 📘 СТРАНИЦА 1 — ТИТУЛЬНАЯ -->
     <div class="page">
         <div class="header">
-            <h1>IQ-Тест: g-factor</h1>
+            <h1>IQ & G-Factor Test</h1>
             <p>Анализ логических паттернов и визуальных задач для оценки общего интеллекта</p>
         </div>
 
