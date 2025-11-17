@@ -13,7 +13,6 @@
             background-color: #fff;
             margin: 0;
             padding: 0;
-            counter-reset: question-number;
         }
 
         .page {
@@ -25,7 +24,6 @@
             page-break-after: always;
             position: relative;
             background: #fff;
-            counter-reset: question-number; /* <-- Добавьте эту строку */
         }
 
         .page:last-child {
@@ -69,7 +67,7 @@
         }
 
         .question-title::before {
-            content: "Вопрос №";
+            content: "Вопрос № " counter(question-number);
             counter-increment: question-number;
             display: inline-block;
             margin-right: 0.2cm;
