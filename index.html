@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IQ & G-Factor Test</title>
+    <title>IQ-Тест: g-factor</title>
     <style>
         /* Общие стили */
         body {
@@ -13,18 +13,20 @@
             background-color: #fff;
             margin: 0;
             padding: 0;
+            counter-reset: question-number;
         }
 
         .page {
-            width: 21cm;
-            min-height: 29.7cm;
-            margin: 0 auto;
-            padding: 2cm;
-            box-sizing: border-box;
-            page-break-after: always;
-            position: relative;
-            background: #fff;
-        }
+    		width: 21cm;
+    		min-height: 29.7cm;
+    		margin: 0 auto;
+    		padding: 2cm;
+    		box-sizing: border-box;
+    		page-break-after: always;
+    		position: relative;
+    		background: #fff;
+    	
+	}
 
         .page:last-child {
             page-break-after: avoid;
@@ -67,12 +69,12 @@
         }
 
         .question-title::before {
-            content: "Вопрос № " counter(question-number);
-            counter-increment: question-number;
-            display: inline-block;
-            margin-right: 0.2cm;
-            font-weight: normal;
-        }
+    content: "Вопрос № " counter(question-number);
+counter-increment: question-number;
+    display: inline-block;
+    margin-right: 0.2cm;
+    font-weight: normal;
+}
 
         .question-title::after {
             content: "";
